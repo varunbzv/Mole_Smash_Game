@@ -4,7 +4,7 @@ It is an FPGA-based game implemented in Verilog, featuring an FSM to control the
 The Mole Smash Game is a digital interactive game implemented in Verilog using a state machine-based design. The player must "smash" the mole by pressing the correct switch (sw[x]) corresponding to a randomly lit LED (led[x]). Each correct hit advances the game state and increments the score count. The game progresses through predefined LED-switch combinations, ending after 32 successful hits.
 
 This project includes:
-A Finite State Machine (FSM) handling mole appearances and switch detection.
+A Finite State Machine (FSM) handling mole appearances and switch detection next state depend on current state and input though the output depends on currnet state hence moore machine .
 The game logic is implemented using case statements and state transitions.
 A seven-segment display displays a score counter (connected via UBCD and segment decoders).
 Integration-ready with Xilinx Vivado, supporting simulation and implementation on FPGA boards like Basys 3.
